@@ -10,9 +10,7 @@ export default class Main extends Component {
     }
 
     componentDidMount(){
-        LuciappServices.traerGatos()
-        .then((data) => this.setState({gatos:data.results}))
-        .catch((error) => console.log(error))
+        
     }
 
   render() {
@@ -21,7 +19,7 @@ export default class Main extends Component {
         <div className="row">
           <div className="col-md-8 blog-main">
             
-            <BlogPosts gatos = {this.state.gatos} />
+            <BlogPosts/>
       
           </div>
       

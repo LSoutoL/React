@@ -7,6 +7,10 @@ class Servicio {
         return response.json();
     }
 
+    async traerPorId (id){
+        const response = await fetch(API_1.ID(id));
+        return response.json();
+    }
 
 }
 

@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const BlogPost = ({gato}) => {
+
+ 
 
   return (
     <div>
@@ -8,10 +11,10 @@ export const BlogPost = ({gato}) => {
               <h2 className="blog-post-title">{gato.name}</h2>
 
               <img src = {gato.image} alt="este"/>
-      
-              <p>Especie : {gato.species}</p>
-              <p>Estado: {gato.status}</p>
-              <p>Origen: {gato.origin.name}</p>
+
+              <br/>
+
+              <Link to={`/Details/${gato.id}`} >Detalles</Link>  
              
               <br/>
               <br/>
